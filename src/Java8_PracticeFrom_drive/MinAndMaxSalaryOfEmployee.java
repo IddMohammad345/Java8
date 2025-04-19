@@ -25,6 +25,12 @@ public class MinAndMaxSalaryOfEmployee {
         System.out.println("Employee with max salary : "
         +(maxSalary.isPresent()?maxSalary.get():"Not Applicable")
         );
+
+
+        System.out.println("=====================using max method===============================");
+     Employee sal= list.stream()
+             .max(Comparator.comparing(Employee::getSalary)).get();
+        System.out.println(sal);
     }
 
 }

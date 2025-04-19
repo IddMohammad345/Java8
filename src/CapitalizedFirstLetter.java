@@ -6,7 +6,8 @@ public class CapitalizedFirstLetter {
     public static void main(String[] args) {
         List<String>list= Arrays.asList("apple","grapes","banana","orange");
         list.stream()
-                .map(str->str.isEmpty() ? str: str.substring(0,1).toUpperCase()+str.substring(1))
+                .map(str->str.isEmpty() ? str: str.substring(0,1)
+                        .toUpperCase()+str.substring(1))
                 .forEach(System.out::println);
         System.out.println("========================================");
 
