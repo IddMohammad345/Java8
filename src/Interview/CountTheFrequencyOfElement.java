@@ -19,7 +19,11 @@ public class CountTheFrequencyOfElement {
         //Find the Maximum Even number and minimum Odd number from below array. output: max even is 16 and odd is 1
         Integer[] arr = new Integer[]{ 2,4,8,6,12,16,25,14,1,7,9};
        List<Integer> list1=Arrays.asList(arr);
-       int ar= list1.stream().filter(n -> n % 2 == 0).sorted((a, b) -> b - a).findFirst().get();
+       int ar= list1.stream()
+               .filter(n -> n % 2 == 0)
+               .sorted((a, b) -> b - a)
+               .findFirst()
+               .get();
         System.out.println("=========================================");
         System.out.println("Maximum even Number : "+ar);
         System.out.println("==========================================");

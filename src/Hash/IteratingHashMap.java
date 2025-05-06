@@ -22,5 +22,10 @@ public class IteratingHashMap {
         list.add(map);
         list.add(map1);
         list.forEach(System.out::println);
+
+        System.out.println("===============================================================");
+        for (Map.Entry<Integer,String>m:map.entrySet()){
+            System.out.println(m.getKey()+" "+m.getValue());
+        }
     }
 }
