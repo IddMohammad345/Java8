@@ -17,7 +17,7 @@ public class Finding_Duplicates {
 
         System.out.println("=====================================================================");
 
-        //printing using chat gpt
+
         Map<String,Long>frequencymap=companies.stream()
                 .collect(Collectors.groupingBy(e->e,Collectors.counting()));
 
