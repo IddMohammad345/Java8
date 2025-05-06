@@ -2,7 +2,7 @@ package Java8_PracticeFrom_drive;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {
-        int num=158,n,rev=0;
+        int num=153,n,rev=0;
         int s=num;
         while (num>0){
             n=num%10;
